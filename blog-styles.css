@@ -1,0 +1,140 @@
+/* blog-styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2F528F;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+    background-color: #D29BFD;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.blog-content {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.blog-content h1, .blog-content h2 {
+    color: #2F528F;
+}
+
+.blog-content h2 {
+    margin-top: 20px;
+}
+
+.blog-content form {
+    margin-top: 20px;
+}
+
+.blog-content input[type="text"],
+.blog-content textarea,
+.blog-content input[type="file"],
+.blog-content button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.blog-content button {
+    background-color: #2F528F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-content button:hover {
+    background-color: #D29BFD;
+}
+
+.product-gallery {
+    flex: 1;
+    background-color: #D29BFD;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-gallery h2 {
+    color: #2F528F;
+    margin-bottom: 10px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-container img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2F528F;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .blog-content, .product-gallery {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

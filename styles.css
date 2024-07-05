@@ -1,0 +1,382 @@
+/* styles.css */
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    background-repeat: no-repeat ;
+    background-position: 80%;
+    text-align: center;
+    background-size: 50% 100%;
+
+}
+
+nav ul {
+    text-align: center;
+    background-color: #5976a3;
+    list-style: none;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    border: 10px solid transparent;
+    border-image: url('ondas.png') 30 round;
+}
+
+nav ul li {
+    
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color:#3585ff;
+    
+}
+
+#inicio {
+    text-align: center;
+    padding-bottom: 65px;
+    padding-top: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-size: cover;
+    color: #3585ff;
+background-image: url(IMAG/);
+}
+#libera{
+    font-family: "Roboto", sans-serif;
+    color: #5976a3;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    TEXT-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#imagenes-producto img {
+    max-width: 200px;
+    margin: 10px;
+}
+
+h1, h2 {
+    color:#3585ff;
+}
+
+section {
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#beneficios ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#contacto {
+    background-color: #f4f4f4 ;
+    padding: 20px;
+}
+#comunicacion{
+    text-align: center;
+}
+#contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2F528F;
+    border-radius: 5px;
+}
+
+#contacto button {
+    padding: 10px;
+    background-color: #2F528F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #D29BFD;
+}
+
+footer {
+    background-color: #2F528F;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.accordion-item p {
+    display: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.accordion-item h3 {
+    cursor: pointer;
+    background-color: #ffffff  ;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #2F528F;
+}
+
+#logotipo{
+    width: 30%;
+    height: auto;
+    padding-right: ;
+    padding-top: 20px;
+    
+}
+#bandera{
+    width: 2%;
+    height: auto;
+    padding-right: 0px;
+padding-bottom: 11%;
+}
+
+#acerca {
+    background-color: #fccf00;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.acerca-content {
+    flex: 1;
+    max-width: 60%;
+}
+
+.acerca-content h2 {
+    font-family: "Alfa Slab One", serif;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    TEXT-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+
+
+.acerca-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.acerca-image {
+    flex: 0 0 auto;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .acerca-content, .acerca-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .acerca-content h2 {
+        font-size: 3rem;
+    }
+
+    .acerca-content p {
+        font-size: 1rem;
+    }
+
+    .acerca-image {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .acerca-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .acerca-image {
+        width: 70%;
+    }
+}
+
+#beneficios {
+    background-color: #FFF5E9;
+    padding: 4rem 0;
+   margin: 10px;
+}
+
+.beneficios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.beneficios-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficios-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.beneficios-contenido {
+    flex: 1;
+}
+
+
+.beneficios-contenido h2 {
+    font-family: "Roboto", sans-serif;
+    color: #5E3023;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.beneficios-contenido ul {
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+    padding: 0;
+    word-spacing: 1px;
+}
+
+.beneficios-contenido li {
+    margin-bottom: 0.5rem;
+
+}
+.beneficios-contenido b {
+    color: #5E3023;
+}
+
+@media (max-width: 768px) {
+    .beneficios-container {
+        flex-direction: column;
+    }
+
+    .beneficios-imagen {
+        margin-bottom: 2rem;
+    }
+}
+
+#ingredientes {
+    background-color:#ffffff;
+    padding: 4rem 0;
+}
+
+.ingredientes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.ingredientes-contenido h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #1E441E;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.ingredientes-contenido ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.ingredientes-contenido li {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.ingrediente-imagen {
+    margin-bottom: 1rem;
+}
+
+.ingrediente-imagen img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ingrediente-info h3 {
+    color: #1E441E;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ingrediente-info p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    word-spacing: 1px;
+}
+
+.ingrediente-info strong {
+    color: #1E441E;
+
+}
+
+@media (max-width: 768px) {
+    .ingredientes-contenido ul {
+        grid-template-columns: 1fr;
+    }
+}
+
